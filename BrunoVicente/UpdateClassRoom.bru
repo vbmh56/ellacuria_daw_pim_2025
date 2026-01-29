@@ -1,0 +1,25 @@
+meta {
+  name: UpdateClassRoom
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost/PFG/api/POST_UPDATE_AULA_BY_ID.PHP
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "P_ID_DT_AULA":"3",
+    "P_DS_AULA":"Aula3",
+    "P_I_CAPACIDAD":"250",
+    "P_DS_UBICACION":"En la entrada, de frente"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
